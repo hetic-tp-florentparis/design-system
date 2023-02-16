@@ -1,4 +1,8 @@
 import Head from 'next/head';
+import styles from "@/styles/auth.module.scss";
+import Link from "@/components/atoms/Link";
+import Input from '@/components/molecules/Input';
+import Button from "@/components/atoms/Button";
 
 export default function Register() {
   return (
@@ -10,7 +14,17 @@ export default function Register() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <span className="title">Register</span>
+          <form className="auth">
+              <h1 className={styles.title}>Sign up</h1>
+              <div className={styles.redirection}>
+                  <span className={styles.body}>Already got an account ?</span>
+                  <Link href="./login">Sign In</Link>
+              </div>
+              <Input label="Email" type="mail" placeholder="Enter your email"/>
+              <Input label="Password" type="password" placeholder="Enter your password"/>
+              <Input label="Confirm password" type="password" placeholder="Confirm your password"/>
+              <Button sizeValue="lg">Sign up</Button>
+          </form>
       </main>
     </>
   );
