@@ -1,0 +1,38 @@
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/border-radius.module.scss';
+@import '../../../styles/typo.module.scss';
+
+.button {
+  background-color: $blue;
+  opacity: 0.6;
+  color: $very-light;
+  border: 0;
+  @include border-md;
+  width: fit-content;
+  cursor: pointer;
+  @include button_text;
+}
+
+.button_md {
+  padding: 4px 20px;
+}
+
+.button_lg {
+  padding: 8px 24px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 1;
+}
+
+.button:focus {
+  border: 2px solid $blue-6;
+}
+
+.button:disabled {
+  opacity: 0.2;
+}

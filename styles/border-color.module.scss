@@ -1,0 +1,16 @@
+@import './colors.module.scss';
+
+@mixin border-blue {
+  border: 2px solid $blue-6;
+  box-sizing: border-box;
+}
+
+@mixin border-gray {
+  border: 1px solid $blue-9;
+  box-sizing: border-box;
+}
+
+@mixin border-red {
+  border: 2px solid $red;
+  box-sizing: border-box;
+}

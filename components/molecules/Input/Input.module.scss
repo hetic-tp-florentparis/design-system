@@ -1,0 +1,15 @@
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/typo.module.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: 14px;
+  color: $blue-6;
+  width: 100%;
+}
+
+.input_label {
+  @include input_label;
+}

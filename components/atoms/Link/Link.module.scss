@@ -1,0 +1,34 @@
+@import '../../../styles/colors.module.scss';
+@import '../../../styles/border-color.module.scss';
+@import '../../../styles/typo.module.scss';
+
+.link {
+  text-decoration-line: underline;
+  color: $blue;
+  opacity: 0.6;
+  @include link;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+  color: $blue;
+  opacity: 0.8;
+}
+
+.link:active {
+  text-decoration-line: underline;
+  color: $blue;
+}
+
+.link:visited {
+  text-decoration-line: underline;
+  color: $blue;
+  opacity: 0.4;
+}
+
+.link:focus {
+  @include border-blue;
+  text-decoration-line: underline;
+  color: $blue;
+  width: fit-content;
+}

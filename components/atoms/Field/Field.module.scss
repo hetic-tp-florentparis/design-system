@@ -1,0 +1,20 @@
+@import '../../../styles/shadow.module.scss';
+@import '../../../styles/border-radius.module.scss';
+@import '../../../styles/border-color.module.scss';
+@import '../../../styles/colors.module.scss';
+
+.field {
+  padding: 7px 20px;
+  background-color: $white;
+  @include border-gray;
+  @include shadow-input;
+  @include border-lg;
+}
+
+.field:focus {
+  @include border-blue;
+}
+
+.field.error {
+  @include border-red;
+}

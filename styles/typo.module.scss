@@ -1,0 +1,64 @@
+@import './fonts.module.scss';
+
+@mixin title {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: IBM;
+  letter-spacing: 10%;
+}
+
+@mixin input_label {
+  font-size: 18px;
+  letter-spacing: 0%;
+  font-weight: 500;
+  font-family: IBM;
+  line-height: 24px;
+}
+
+@mixin button_text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-family: IBM;
+}
+
+@mixin link {
+  font-size: 16px;
+  letter-spacing: 0%;
+  font-weight: 700;
+  font-family: IBM;
+  cursor: pointer;
+}
+
+@mixin body_regular {
+  font-size: 16px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  font-family: IBM;
+  line-height: 24px;
+}
+
+@mixin body_medium {
+  font-size: 16px;
+  letter-spacing: 0%;
+  font-weight: 500;
+  font-family: IBM;
+  line-height: 24px;
+}
+
+@mixin body_bold {
+  font-size: 16px;
+  letter-spacing: 0%;
+  font-weight: 700;
+  font-family: IBM;
+  line-height: 24px;
+}
+
+@mixin input_text {
+  font-size: 14px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  font-family: IBM;
+  line-height: 20px;
+}
